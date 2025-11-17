@@ -611,41 +611,6 @@ Multi-camera: 12 total tracks, 10 embeddings active
 3. **Thread-safe architecture** - Concurrent multi-camera processing
 4. **Comprehensive logging** - 50+ debug points for diagnostics
 5. **Memory management** - Auto-cleanup of stale tracks
-
-### Integration Opportunities (for Your Research)
-
-**1. Blockchain Audit Trail (DT-BlocEdge)**
-```python
-# Log Re-ID matches to immutable ledger
-blockchain_record = {
-    'timestamp': frame_id,
-    'camera_pair': (cam_a, cam_b),
-    'track_ids': (tid_a, tid_b),
-    'similarity': similarity_score,
-    'embedding_hash': hash(embedding),
-    'confidence': confidence
-}
-# Write to blockchain for forensic verification
-```
-
-**2. Anomaly Detection (LSTM Autoencoder)**
-```python
-# Export track trajectories and embeddings
-track_sequence = {
-    'track_id': tid,
-    'embeddings': [emb1, emb2, emb3, ...],
-    'trajectories': [(x1,y1), (x2,y2), ...],
-    'timestamps': [t1, t2, t3, ...]
-}
-# Input to LSTM autoencoder for anomaly detection
-```
-
-**3. Edge Deployment (Raspberry Pi 5)**
-```python
-# Quantized models for edge execution
-model = YOLO('yolo11n.pt')  # Nano model
-reid = ReIDModel(quantization=True)
-# Run on Raspberry Pi with reduced latency
 ```
 
 ### Performance Comparison Table
