@@ -13,7 +13,7 @@
 - Provide interactive selection and real-time synchronization
 
 ### Core Components
-1. **YOLOv11s** - Person detection (~0.8-0.87 confidence)
+1. **YOLOv12n** - Person detection (~0.8-0.87 confidence)
 2. **DeepSORT** - Track assignment and management (max_age=30, n_init=3)
 3. **OSNet x1_0** - Re-ID embeddings (512D, L2-normalized)
 4. **PyQt5** - Multi-threaded UI with synchronized display
@@ -98,7 +98,7 @@ class DetectionThread(QThread):
 
 ## 3: YOLO Detection Phase
 
-**Title:** YOLOv11 Person Detection & Coordinate Transformation
+**Title:** YOLOv12n Person Detection & Coordinate Transformation
 
 ### Detection Process
 1. **Frame resizing**: 1920×1080 → 640×360 (3× downscaling)
