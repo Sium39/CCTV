@@ -13,7 +13,7 @@
 - Provide interactive selection and real-time synchronization
 
 ### Core Components
-1. **YOLOv12n** - Person detection (~0.8-0.87 confidence)
+1. **YOLOv12n** - Person detection
 2. **DeepSORT** - Track assignment and management (max_age=30, n_init=3)
 3. **OSNet x1_0** - Re-ID embeddings (512D, L2-normalized)
 4. **PyQt5** - Multi-threaded UI with synchronized display
